@@ -1,0 +1,34 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTAwNDE5NjNhNjkzN2ExYzBmYjY4OSIsImlhdCI6MTY4NzE1OTg0OCwiZXhwIjoxNjg3MjQ2MjQ4fQ.D3bg_lwJ2INOgNW6Use72JwUNuSnWoy3I18Qdk_825w
+###
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTAwNDE5NjNhNjkzN2ExYzBmYjY4OSIsImlhdCI6MTY4NzE1OTg0OH0.aKYyaF9Eqj3vxPGEIOSNhVQNjYO1d2T2m7GQna5-zA4"
+}
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "username": "123",
+    "password": "123"
+}
+###
+DELETE http://localhost:3000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTAwMjY0OWM2OWMzZDA5ODRiMjcyZSIsImlhdCI6MTY4NzE1OTQyMH0.vnpzNgMYMa2wM9lX3QhS94mNpSgd_P3n6D8jpxIPBAs"
+}
+
+###
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "username": "123",
+    "password": "123"
+}
+
